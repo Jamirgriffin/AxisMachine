@@ -12,16 +12,19 @@ user agent stylesheet
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .navbar-dark {
-  background-color: #282E34;
+  background-color: #282e34cf;
   margin-top: 0;
 }
  
 .navbar{
   align-items: center;
+  text-align: center;
 }
+
 
 body {
     display: block;
