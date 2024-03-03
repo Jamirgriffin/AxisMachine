@@ -76,12 +76,19 @@
         h3 {
             letter-spacing: 5px;
             text-transform: uppercase;
-            font: 20px "Lato", sans-serif;
+            font: 25px "Lato", sans-serif;
+            color: #ffffff;
+        }
+
+        h5 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 15px "Lato", sans-serif;
             color: #ffffff;
         }
 
         /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
+        /* @media only screen and (max-device-width: 1024px) {
 
             .bgimg-1,
             .bgimg-2,
@@ -89,7 +96,7 @@
             .bgimg-4 {
                 background-attachment: scroll;
             }
-        }
+        } */
 
         #container {
             position: relative;
@@ -117,10 +124,6 @@
         <!-- <div style="color: #777; background-color:#282E34;text-align:center; padding: top 20px; padding: bottom 20px;">
             <img id="logo" class="img-fluid" src="img/Logo square alternative.png" />
         </div> -->
-        <!-- <div
-            style="color: #777; background-color:#282E34; display: flex; justify-content: center; align-items: center; height: 100vh;">
-            <img id="logo" class="img-fluid" src="img/Logo square alternative.png" style="max-height: 90vh;" />
-        </div> -->
         <div id="container">
             <img id="logo" class="img-fluid" src="img/Logo square alternative.png" />
         </div>
@@ -137,16 +140,16 @@
         });
     </script>
 
-    <nav id="navbar" class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav id="navbar" style="height:8vh" class="navbar navbar-expand-sm navbar-dark sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="col-sm-2 col-md-4"></div>
         <div class="collapse navbar-collapse" style="text-align: center;">
             <ul style="text-align: center;" class="navbar-nav nav-pills col-sm-12">
-                <li class="nav-item col-sm-3 col-lg-1 mx-auto">
+                <!-- <li class="nav-item col-sm-3 col-lg-1 mx-auto">
                     <a class="nav-link" href="#about">About</a>
-                </li>
+                </li> -->
                 <li class="nav-item col-sm-3 col-lg-1 mx-auto">
                     <a class="nav-link" href="#services">Services</a>
                 </li>
@@ -163,22 +166,27 @@
 
 
     <!-- <div class="bgimg-1">
-    </div> -->
+    </div>
 
     <div id="about"
         style="color: #777; background-color:white; text-align:center; padding:50px 80px; max-height: 80vh;">
         <h3 style="text-align:center;">ABOUT</h3>
-        <p class="col-lg-9 col-xl-7 mx-auto" style="text-align:center; font-size: 20px;">Axis Machine Company is an R&D
+        <p class="col-lg-9 col-xl-7 mx-auto" style="text-align:center; font-size: 20px;">
+            
+            This is a startup with the capacity for tight tolerances
+
+            Axis Machine Company is an R&D
             oriented CNC
             machining company based out of Pensacola, FL. Axis is dedicated to working with
             development projects catering towards science and new age ideas. We produce precision-machined
             parts to your spec.</p>
-    </div>
+    </div> -->
 
     <div class="bgimg-2">
     </div>
 
-    <div id="services" style="position:relative;">
+
+    <!-- <div id="services" style="position:relative;">
         <div
             style="color:#ddd;background-color:#282E34;text-align:center; text-align: justify; padding-top:20px; padding-bottom:20px;">
             <h3 class="col-lg-9 col-xl-7 mx-auto" style="text-align:center;  padding-top:20px; color:white">SERVICES
@@ -188,9 +196,9 @@
                 Turning</p>
 
             <div class="container" sstyle="text-align:center;">
-                <div class="row d-flex flex-wrap align-items-center col-12" data-toggle="modal" data-target="#lightbox">
-                    <!-- <div class="col-0 col-xl-1"></div> -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 align-items-center">
+                <div class="row d-flex flex-wrap align-items-center col-12" data-toggle="modal" data-target="#lightbox"> -->
+    <!-- <div class="col-0 col-xl-1"></div> THIS IS REALLY A COMMENT -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 col-xl-3 align-items-center">
                         <video class="img-fluid" style="margin:0px;" autoplay loop muted>
                             <source src="mp4/Square Cad.mp4" type="video/mp4" />
                         </video>
@@ -207,10 +215,10 @@
                         <div class="carousel-caption">
                             <h3>CNC TURNING</h3>
                         </div>
-                    </div>
-                    <!-- <div class="col-0 col-xl-1"></div>
-                    <div class="col-0 col-xl-1"></div> -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 align-items-center">
+                    </div> -->
+    <!-- <div class="col-0 col-xl-1"></div>
+                    <div class="col-0 col-xl-1"></div> THIS IS REALLY A COMMENT-->
+    <!-- <div class="col-12 col-md-6 col-lg-3 col-xl-3 align-items-center">
                         <img style="margin:0px;" src="img/Plate in Machine - Closeup.JPG" />
                         <div class="carousel-caption">
                             <h3>CNC MILLING</h3>
@@ -222,10 +230,10 @@
                             <h3 style="align-items: center;">RESEARCH AND DESIGN</h3>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- Modal -->
-                <div class="modal fade" id="lightbox" role="dialog" tabindex="-1" aria-labelledby="#indicators"
+    <!-- Modal THIS IS REALLY A COMMENT-->
+    <!-- <div class="modal fade" id="lightbox" role="dialog" tabindex="-1" aria-labelledby="#indicators"
                     aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -281,20 +289,75 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+
+    <div id="services"
+        style="position:relative; color:#ddd; background-color:#282E34; display: flex; justify-content: center; align-items: center; height: 80vh;">
+        <div
+            style="color:#ddd; background-color:#282E34; text-align:center; text-align: justify; padding-top:20px; padding-bottom:20px;">
+
+            <h3 class="col-lg-9 col-xl-7 mx-auto"
+                style="text-align:center; padding-top:10px; padding-bottom: 20px; color:white">SERVICES</h3>
+            <p class="col-lg-9 col-xl-7 mx-auto" style="text-align:center; padding-bottom: 20px; font-size: 25px;">
+                Computer aided design, CNC
+                Milling and Turning</p>
+
+            <div class="container" style="text-align:center;">
+                <div class="row d-flex flex-wrap align-items-center col-12" data-toggle="modal" data-target="#lightbox">
+                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
+                        <video class="img-fluid" style="margin:0px;" autoplay loop muted>
+                            <source src="mp4/Square Cad.mp4" type="video/mp4" />
+                        </video>
+                        <div class="carousel-caption">
+                            <h5>CAD</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
+                        <img style="margin:0px;" src="img/Assembly.JPG" />
+                        <div class="carousel-caption">
+                            <h5>RESEARCH AND DESIGN</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
+                        <img style="margin:0px;" src="img/Plate in Machine - Closeup.JPG" />
+                        <div class="carousel-caption">
+                            <h5>CNC MILLING</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
+                        <video class="img-fluid" style="margin:0px;" autoplay loop muted>
+                            alt="slide">
+                            <source src="mp4/Roller Bore Cropped.mp4" type="video/mp4" />
+                        </video>
+                        <div class="carousel-caption">
+                            <h5>CNC TURNING</h5>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <div class="bgimg-3">
     </div>
 
 
     <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34; text-align:center; padding:50px 80px;">
+        <div style="color:#ddd;background-color:#282E34; text-align:center; padding:30px 30px;">
             <h3 id="gallery" style="text-align:center; padding-top:20px; color:white;">
                 </h2>
                 <p style="text-align:center;"></p>
 
                 <div class="row row-content" style="padding-top:20px">
-                    <div class="col-md-11 col-lg-11 col-xl-7 mx-auto">
+                    <div class="col-11 col-md-11 col-lg-11 col-xl-7 mx-auto">
                         <div id="partsCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#partsCarousel" data-slide-to="0" class="active"></li>
@@ -454,7 +517,7 @@
 
 
             <!--Grid column-->
-            <div class="col-lg-9 col-xl-7 mx-auto">
+            <div class="col-12 col-lg-9 col-xl-7 mx-auto">
                 <form name="contactus" action="formData.html" method="post">
                     <div class="col-lg-9 col-xl-7 mx-auto">
                         <!--Grid row-->
@@ -505,9 +568,15 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="print" id="print">
                             <label class="form-check-label" for="print">
-                                3D Printing
+                                CAD Services
                             </label>
                         </div>
+                        <!-- <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="print" id="print">
+                            <label class="form-check-label" for="print">
+                                3D Printing
+                            </label>
+                        </div> -->
                         <!-- <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="other" id="other">
                             <label class="form-check-label" for="other">
@@ -523,7 +592,7 @@
                                     <label for="message">Message</label>
                                 </div>
                                 <div>
-                                    <label class="form-label" for="customFile">UPLOAD A 3D MODEL</label>
+                                    <label class="form-label" for="customFile">Upload a 3D Model</label>
                                     <input style="margin-bottom: 20px;" type="file" class="form-control"
                                         id="customFile" />
                                 </div>
@@ -551,7 +620,7 @@
         </div>
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer" style="position:relative; background: #7a85b05d ">
         <a role="button" class="btn" href="tel:+18506795563">(850)679-5563</a>
         <a role="button" class="btn" href="mailto:axis.machine@outlook.com">axis.machine@outlook.com</a>
     </footer>
