@@ -293,20 +293,19 @@
 
 
     <div id="services"
-        style="position:relative; color:#ddd; background-color:#282E34; display: flex; justify-content: center; align-items: center; height: 80vh;">
+        style="position:relative; color:#ddd; background-color:#282E34; display: flex; justify-content: center; align-items: center; height: auto;">
         <div
             style="color:#ddd; background-color:#282E34; text-align:center; text-align: justify; padding-top:20px; padding-bottom:20px;">
 
-            <h3 class="col-lg-9 col-xl-7 mx-auto"
+            <h3 class="col-md-6 col-lg-9 col-xl-7 mx-auto"
                 style="text-align:center; padding-top:10px; padding-bottom: 20px; color:white">SERVICES</h3>
-            <p class="col-lg-9 col-xl-7 mx-auto" style="text-align:center; padding-bottom: 20px; font-size: 25px;">
-                Computer aided design, CNC
-                Milling and Turning</p>
+            <p class="col-lg-9 col-xl-7 mx-auto" style="text-align:center; padding-bottom: 20px; font-size: 20px;">
+                Computer aided design, CNC Milling and Turning</p>
 
             <div class="container" style="text-align:center;">
-                <div class="row d-flex flex-wrap align-items-center col-12" data-toggle="modal" data-target="#lightbox">
-                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
-                        <video class="img-fluid" style="margin:0px;" autoplay loop muted>
+                <div class="row d-flex flex-wrap justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <video class="img-fluid" style="max-width:100%; margin:0px;" autoplay loop muted>
                             <source src="mp4/Square Cad.mp4" type="video/mp4" />
                         </video>
                         <div class="carousel-caption">
@@ -314,23 +313,22 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
-                        <img style="margin:0px;" src="img/Assembly.JPG" />
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img style="max-width:100%; margin:0px;" src="img/Assembly.JPG" />
                         <div class="carousel-caption">
                             <h5>RESEARCH AND DESIGN</h5>
                         </div>
                     </div>
 
-
-                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
-                        <img style="margin:0px;" src="img/Plate in Machine - Closeup.JPG" />
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img style="max-width:100%; margin:0px;" src="img/Plate in Machine - Closeup.JPG" />
                         <div class="carousel-caption">
                             <h5>CNC MILLING</h5>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
-                        <video class="img-fluid" style="margin:0px;" autoplay loop muted>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <video class="img-fluid" style="max-width:100%; margin:0px;" autoplay loop muted>
                             alt="slide">
                             <source src="mp4/Roller Bore Cropped.mp4" type="video/mp4" />
                         </video>
@@ -338,8 +336,6 @@
                             <h5>CNC TURNING</h5>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -517,24 +513,19 @@
 
 
             <!--Grid column-->
-            <div class="col-12 col-lg-9 col-xl-7 mx-auto">
-                <form name="contactus" action="formData.html" method="post">
+            <div class="col-12 col-sm-10 col-lg-9 col-xl-7 mx-auto">
+                <form name="contact-form" action="formData.html" method="post">
                     <div class="col-lg-9 col-xl-7 mx-auto">
-                        <!--Grid row-->
+                        <!-- Grid row -->
                         <div class="row">
-
-                            <!--Grid column-->
+                            <!-- Grid column -->
                             <div class="col-md-9">
                                 <div class="md-form mb-0">
                                     <input type="text" id="name" name="name" class="form-control">
                                     <label for="name" class="">Company/Name</label>
                                 </div>
                             </div>
-                            <!--Grid column-->
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
 
                         <div class="row">
                             <div class="col-md-7">
@@ -551,13 +542,11 @@
                             </div>
                         </div>
                         <div>
-                            <H6 style="margin-top:20px; margin-bottom:10px;">Services Needed</H6>
+                            <h6 style="margin-top:20px; margin-bottom:10px;">Services Needed</h6>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="lathe" id="lathe">
-                            <label class="form-check-label" for="lathe">
-                                CNC Turning
-                            </label>
+                            <input class="form-check-input" type="checkbox" value="lathe" id="lathe" name="services[]">
+                            <label class="form-check-label" for="lathe">CNC Turning</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="mill" id="mill">
@@ -593,8 +582,8 @@
                                 </div>
                                 <div>
                                     <label class="form-label" for="customFile">Upload a 3D Model</label>
-                                    <input style="margin-bottom: 20px;" type="file" class="form-control"
-                                        id="customFile" />
+                                    <input style="margin-bottom: 20px;" type="file" class="form-control" id="customFile"
+                                        name="file">
                                 </div>
                             </div>
                         </div>
@@ -602,8 +591,7 @@
                 </form>
 
                 <div class="col-lg-9 col-xl-7 mx-auto text-center text-md-left">
-                    <a class="btn btn-lg btn-secondary"
-                        onclick="document.getElementById('contact-form').submit();">Send</a>
+                    <button type="submit" class="btn btn-lg btn-secondary">Send</button>
                 </div>
                 <div class="status"></div>
             </div>
