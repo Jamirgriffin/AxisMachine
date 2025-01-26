@@ -1,1 +1,1 @@
-Simple Static Website with Parallax Backgorund Scrolling
+Simple Static Website with Parallax Background Scrolling
